@@ -1,0 +1,168 @@
+<html lang="en">
+<head>
+    <title>Fruit Reverse Image Search</title>
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <center><h1>Fruit Reverse Image Search</h1></center>
+	<div class="center">
+        <form id="upload-file" method="POST" enctype="multipart/form-data">
+		<div class="dropzone">
+			<img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" />
+			<input type="file" class="upload-input" name="file" id="profile-img"/>
+
+		</div>
+            <img  id="profile-img-tag" width="200px"  style="left: 200px;"/>
+
+		<Button class="btn" id="btns" name="uploadbutton">Search</Button>
+</form>
+	</div>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <h1 id="re"></h1>
+<div class="gallery">
+    <div class="gallery__column">
+        <a href="#" target="_blank" class="gallery__link">
+            <figure class="gallery__thumb">
+                <img  id="a1" class="gallery__image" width="200px" height="200px">
+            </figure>
+        </a>
+
+        <a href="#" target="_blank" class="gallery__link">
+            <figure class="gallery__thumb">
+                <img  id="a2" class="gallery__image" width="200px" height="200px">
+            </figure>
+        </a>
+        <a href="#" target="_blank" class="gallery__link">
+            <figure class="gallery__thumb">
+                <img  id="a3" class="gallery__image" width="200px" height="200px">
+            </figure>
+        </a>
+        
+    </div>
+    
+    <div class="gallery__column">
+        <a href="#" target="_blank" class="gallery__link">
+            <figure class="gallery__thumb">
+                <img  id="a4" class="gallery__image" width="200px" height="200px">
+            </figure>
+        </a>
+
+        <a href="#" target="_blank" class="gallery__link">
+            <figure class="gallery__thumb">
+                <img  id="a5" class="gallery__image" width="200px" height="200px">
+            </figure>
+        </a>
+        <a href="#" target="_blank" class="gallery__link">
+            <figure class="gallery__thumb">
+                <img  id="a6" class="gallery__image" width="200px" height="200px">
+            </figure>
+        </a>
+
+</div>
+    
+    <div class="gallery__column">
+        <a href="#" target="_blank" class="gallery__link">
+            <figure class="gallery__thumb">
+                <img  id="a7" class="gallery__image" width="200px" height="200px">
+            </figure>
+        </a>
+        <a href="#" target="_blank" class="gallery__link">
+            <figure class="gallery__thumb">
+                <img  id="a8" class="gallery__image" width="200px" height="200px">
+            </figure>
+        </a>
+
+
+        </div>
+    
+    <div class="gallery__column">
+        <a href="#" target="_blank" class="gallery__link">
+            <figure class="gallery__thumb">
+                <img  id="a9" class="gallery__image" width="200px" height="200px">
+            </figure>
+        </a>
+        <a href="#" target="_blank" class="gallery__link">
+            <figure class="gallery__thumb">
+                <img  id="a10" class="gallery__image" width="200px" height="200px">
+            </figure>
+        </a>
+        
+
+    </div>
+    
+    
+</div>
+
+<script type="text/javascript">
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                $('#profile-img-tag').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    $("#profile-img").change(function(){
+        readURL(this);
+    });
+    
+
+</script>
+<script type="text/javascript">
+
+       $(function() {
+    $('#btns').click(function() {
+        event.preventDefault();
+        var form_data = new FormData($('#upload-file')[0]);
+        console.log(form_data);
+        $.ajax({
+            type: 'POST',
+            url: '/',
+            data: form_data,
+            contentType: false,
+            processData: false,
+        }).done(function(data, textStatus, jqXHR){
+            console.log("hi");
+            console.log(data);
+            $('#re').text("Similar Images");
+
+            $('#a1').attr('src', 'static/'+'images/'+data[0]);
+            $('#a2').attr('src', 'static/'+'images/'+data[1]);
+            $('#a3').attr('src', 'static/'+'images/'+data[2]);
+            $('#a4').attr('src', 'static/'+'images/'+data[3]);
+            $('#a5').attr('src', 'static/'+'images/'+data[4]);
+            $('#a6').attr('src', 'static/'+'images/'+data[5]);
+            $('#a7').attr('src', 'static/'+'images/'+data[6]);
+            $('#a8').attr('src', 'static/'+'images/'+data[7]);
+            $('#a9').attr('src', 'static/'+'images/'+data[8]);
+            $('#a10').attr('src', 'static/'+'images/'+data[9]);
+
+
+
+
+        }).fail(function(data){
+            alert('error!');
+        });
+    });
+}); 
+
+    
+</script>
+
+</body>
+</html>
+
