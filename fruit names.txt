@@ -1,0 +1,7 @@
+oranges,195
+apples,174
+pineapple,178
+watermelon,218
+bananas,143
+strawberry,179
+papaya,182
