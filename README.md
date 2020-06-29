@@ -50,7 +50,17 @@ When we are searching some thing in google there is a option in right of search 
 git clone https://github.com/ksdkamesh99/Social-Distance-Detector.git
 ```
 
-3. Now we need to install required libraries like opencv,spacy etc.  
+3. Install the Packages: 
+```sh
+pip install -r requirements.txt
+```
+
+4. At last, push in the command:
+```sh
+python app.py
+```
+
+5. Go to ` http://127.0.0.1:5000/` and enjoy the application.
 
 ## To Do in future:-
 1. UI of website need to be improved.
