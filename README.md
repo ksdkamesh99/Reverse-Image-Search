@@ -27,6 +27,20 @@ It is a replication of google image search engine for finding similar images in 
 When we are searching some thing in google there is a option in right of search bar i.e image search. When I noticed it I started thinking of its working and researched and started a project similar to it using deep learning.
 
 ## Technical Aspect
+
+1. Firstly I collected images of 6 types of fruits.Dataset contains arount 1157 images.I am providing the link of the dataset [here]().
+
+2. Now I used pretrained VGG16 model and excluding the last output layer and collected the feature vectors of all the images.
+
+3. Then we need to take a query image and collect the feature vector similarly as said in step 2.
+
+4. Now I calculated the the cosine distance from query features to collected feature vector and sorted it.
+
+5. According to cosine similarity, lesser the distance more the similarity.
+
+6. Then using ajax and flask deployed it to the development server.
+
+
 ## Installation
 1. If you like my project do 🌟🌟 my repository.
 
