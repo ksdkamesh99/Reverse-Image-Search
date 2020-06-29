@@ -9,12 +9,9 @@
   * [Motivation](#motivation)
   * [Technical Aspect](#technical-aspect)
   * [Installation](#installation)
-  * [Run](#run)
-  * [Directory Tree](#directory-tree)
   * [To Do](#to-do)
   * [Bug / Feature Request](#bug---feature-request)
   * [Technologies Used](#technologies-used)
-  * [Team](#team)
   * [License](#license)
 
 
@@ -41,7 +38,9 @@ git clone https://github.com/ksdkamesh99/Social-Distance-Detector.git
 3. Now we need to install required libraries like opencv,spacy etc.  
 
 ## To Do in future:-
+1. UI of website need to be improved.
 
+2. Need to add some more images in the dataset so as to improve the accuracy.
 
 ## Bug / Feature Request
 If you find a bug (gave undesired results), kindly open an issue [here]() by including your search query and the expected result.
