@@ -28,7 +28,7 @@ When we are searching some thing in google there is a option in right of search 
 
 ## Technical Aspect
 
-1. Firstly I collected images of 6 types of fruits.Dataset contains arount 1157 images.I am providing the link of the dataset [here]().
+1. Firstly I collected images of 6 types of fruits.Dataset contains arount 1157 images.I am providing the link of the dataset [here](https://drive.google.com/drive/folders/1RFnObzTjFsrGVOzpw6q_WYQQJoehglA2?usp=sharing).
 
 2. Now I used pretrained VGG16 model and excluding the last output layer and collected the feature vectors of all the images.
 
