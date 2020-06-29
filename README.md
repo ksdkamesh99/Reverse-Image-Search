@@ -47,7 +47,7 @@ When we are searching some thing in google there is a option in right of search 
 2. Clone my repository by using following command in terminal/Command Prompt.
 
 ```sh
-git clone https://github.com/ksdkamesh99/Social-Distance-Detector.git
+https://github.com/ksdkamesh99/Reverse-Image-Search.git
 ```
 
 3. Install the Packages: 
