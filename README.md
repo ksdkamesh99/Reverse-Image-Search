@@ -13,6 +13,7 @@
   * [Bug / Feature Request](#bug---feature-request)
   * [Technologies Used](#technologies-used)
   * [License](#license)
+  * [Contact](#contact-)
 
 
 ## Demo
