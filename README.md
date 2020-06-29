@@ -17,7 +17,7 @@
 
 
 ## Demo
-![](demo.gif)
+![](demos.gif)
 
 ## Overview
 
