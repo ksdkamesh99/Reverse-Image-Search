@@ -24,6 +24,7 @@ It is a replication of google image search engine for finding similar images in 
 
 ## Motivation
 
+When we are searching some thing in google there is a option in right of search bar i.e image search. When I noticed it I started thinking of its working and researched and started a project similar to it using deep learning.
 
 ## Technical Aspect
 ## Installation
