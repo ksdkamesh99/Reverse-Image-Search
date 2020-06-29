@@ -43,9 +43,9 @@ git clone https://github.com/ksdkamesh99/Social-Distance-Detector.git
 2. Need to add some more images in the dataset so as to improve the accuracy.
 
 ## Bug / Feature Request
-If you find a bug (gave undesired results), kindly open an issue [here]() by including your search query and the expected result.
+If you find a bug (gave undesired results), kindly open an issue [here](https://github.com/ksdkamesh99/Reverse-Image-Search/issues/new/) by including your search query and the expected result.
 
-If you'd like to request a new function, feel free to do so by opening an issue [here](). Please include sample queries and their corresponding results.
+If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/ksdkamesh99/Reverse-Image-Search/issues/new/). Please include sample queries and their corresponding results.
 
 ## Technologies Used
 
