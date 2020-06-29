@@ -51,7 +51,9 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 ## Technologies Used
 
 
-[<img target="_blank" src="" width=200>]() [<img target="_blank" src="" width=170>]()
+[<img target="_blank" src="https://keras.io/img/logo-small.png" width=200>](https://keras.io/api/applications/) [<img target="_blank" src="https://www.fullstackpython.com/img/logos/scipy.png" width=170>](https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.distance.cosine.html)
+
+[<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=200>](https://flask.palletsprojects.com/en/1.1.x/) 
 
 
 
